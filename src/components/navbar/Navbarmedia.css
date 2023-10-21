@@ -1,0 +1,16 @@
+@media screen and (max-width: 1117px) {
+    .Navbar{
+        width: 1200px;
+        padding: 0 40px;
+    }
+    .ul__collection li{
+        display: none;
+    }
+    .ul__collection__2 li{
+        display: none;
+    }
+    .navbar__icons{
+        display: block;
+       
+    }
+}
