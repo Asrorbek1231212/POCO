@@ -27,6 +27,7 @@
         transition: .5s;
         overflow: hidden;
         margin: auto;
+        margin-top: 10px;
     }  
     .box img{
         width: 100%;

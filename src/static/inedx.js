@@ -18,6 +18,6 @@ export const DATA = [
         url: ra4,
         ur1: ra5,
         ur3: ra6,
-        hait: 260
+        hait: 460
     },
 ]

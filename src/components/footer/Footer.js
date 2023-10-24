@@ -39,27 +39,34 @@ function Footer() {
             </div>
         </div>
         <div className="footer__navi__pasti">
-          <ul>
+          <ul className='abuu'>
             <h3 className='h22'>LEARN MORE</h3>
-            <li className='li__footer'>POCO F5 Series</li>
-            <li className='li__footer'>POCO X5 Series</li>
-            <li className='li__footer'>POCO M5</li>
-            <li className='li__footer'>POCO F4</li>
-            <li className='li__footer'>POCO Watch</li>
+            <div className='bocloclak'></div>
+            <li className='li__footer'><span>POCO F5 Series</span> <h2 className='vaku'>SUPPORT</h2></li>
+            <div className='bocloclak'></div>
+            <li className='li__footer'><span>POCO X5 Series</span> <h2 className='vaku'>Abouts us</h2></li>
+            <div className='bocloclak'></div>
+            <li className='li__footer'><span>POCO M5 </span><h2 className='vaku'>FOLLOW POCO</h2></li>
+            <div className='bocloclak'></div>
+            <li className='li__footer'><span>POCO F4 </span><h2 className='vaku'>Abouts us</h2></li>
+            <div className='bocloclak'></div>
+            <li className='li__footer'><span>POCO Watch</span></li>
+           
+            
           </ul>
-          <ul>
+          <ul className='abuu1'>
             <h3 className='h22'>SUPPORT</h3>
             <li className='li__footer'>Contact Us</li>
             <li className='li__footer'>WARRANTY</li>
           </ul>
-          <ul>
+          <ul className='abuu1'>
             <h3 className='h22'>Abouts us</h3>
             <li className='li__footer'>POCO</li>
             <li className='li__footer'>User Agreement</li>
             <li className='li__footer'>Privacy Policy</li>
             <li className='li__footer'>POCO Blog</li>
           </ul>
-          <ul>
+          <ul className='abuu1'>
             <h3 className='h22'>FOLLOW POCO</h3>
             <li className='li__footer'><BiLogoFacebook/> Facebook</li>
             <li className='li__footer'><TiSocialInstagram/> Instagram</li>

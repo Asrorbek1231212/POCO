@@ -4,7 +4,7 @@ body{
 
 .Footer{
     width: 100%;
-    height: 650px;
+    height: 530px;
     background: black;
     padding-top: 70px;
 
@@ -53,17 +53,28 @@ body{
     padding: 50px 10px;
     display: flex;
     gap: 8%;
+    
+}
+.bocloclak{
+    width: 250px;
+    border-bottom: 2px solid #fff;
+    display: none;
 }
 .pasi__box{
     width: 170px;
     height: 300px;
     /* border: 1px solid red; */
 }
+.vaku{
+    color: #fff;
+    display: none;
+}
 .pasi__box ul{
     list-style: none;
     padding-top: 10px;
     margin-bottom: 10px;
     color: #fff;
+ 
 }
 .li__footer{
     padding-top: 15px;

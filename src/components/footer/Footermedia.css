@@ -13,6 +13,22 @@
         display: none;
     }
     .footer__icons{
-        font-size: 38px;
+        font-size: 58px;
+    }
+    .bocloclak{
+        display: block;
+        margin-top: 10px;
+    }
+    .abuu{
+        margin-left: 10%;
+    }
+    .vaku{
+        display: block;
+    }
+    .abuu1{
+        display: none;
+    }
+    .li__footer span{
+        display: none;
     }
 }
