@@ -1,0 +1,18 @@
+@media screen and (max-width:1170px) {
+    .Footer{
+        width: 1200px;
+    }
+}
+@media screen and (max-width:950px) {
+    .footer__inp{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .footer__box__titel{
+        display: none;
+    }
+    .footer__icons{
+        font-size: 38px;
+    }
+}

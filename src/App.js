@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Mian/>
-      <h2>PC.CO</h2>
+      
     </div>
   );
 }
