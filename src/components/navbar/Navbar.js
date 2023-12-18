@@ -1,25 +1,49 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import "./Navbar.css"
-import "./Navbarmedia.css"
-import {HiBars3} from "react-icons/hi2"
-import rasm from "../../assets/POCO.png"
-function Navbar() {
-    let arr = ["GLOBAL", "|", "POCO CMMUNITY",]
-    let arr2 = ["SING IN", "I", "SING UP"] 
+
+
+function Navbar({data}) {
+  const [value, setValue] = useState("")
+  const [searchData, setsearchData] = useState([])
+  useEffect(()=>{
+    if(value.trim()){
+      let filterdata = data.filter(el => el.sinifraqami.toLowerCase().includes(value.toLowerCase().trim()))
+      setsearchData(filterdata)
+    }else{
+      setsearchData([])
+    }
+   
+  },[value])
+  
   return (
     <div className='Navbar'>
-        <img src={rasm} alt="" />
-        <ul className='ul__collection'>
-            {
-                arr.map((i, inx)=><li key={inx}>{i}</li>)
-            }
-        </ul>
-        <ul className='ul__collection__2'>
+      <br />
+        <h2>33 - Maktab</h2>
+        <div className='nav-sorch'>
+          <input type="text" 
+          placeholder='sinfin qidirish'
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+          />
            {
-            arr2.map((i, inx)=><li key={inx}>{i}</li>)
-           }
-        </ul>
-        <HiBars3 className='navbar__icons'/>
+    value.trim() && <div className="nav__search-drop">
+      {
+        !searchData.length && <p>Natija</p> 
+      }
+      {
+      searchData?.slice(0, 4)?.map((el) => <div to={`/product/${el.id}`} key={el.id} className='nav__search-item'>
+        <h3>{el.sinifraqami}</h3>
+        <div>
+        </div>
+      </div>)
+      
+    }
+    {
+      !searchData.length && <h2>Natija yoq</h2> 
+    }
+    </div> 
+  }
+        </div>
     </div>
   )
 }
