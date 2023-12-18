@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Navbar data={jadval}/>
       <Product data={jadval}/>
-      <h2>asror</h2>
+     
     </div>
   );
 }
